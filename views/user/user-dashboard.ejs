@@ -253,7 +253,7 @@
                         text-align: center;
                         cursor: pointer;
                         background-color: antiquewhite; margin: 0 15px;">
-                        UnitingCare Health Data Analysis File
+                        Offline Data Analysis File
                     </a>
 
                     <a href="https://app.powerbi.com/reportEmbed?reportId=443cd963-c945-49d3-a37b-97d38c8fb2ae&autoAuth=true&ctid=ecbdb6b6-ebe2-4a6a-8143-9fa7ed7c46cc"
@@ -262,15 +262,16 @@
                         text-align: center;
                         cursor: pointer;
                         background-color: antiquewhite; margin: 0 15px; text-decoration: none;">
-                        Online Data Analysis View
+                        Online Data Analysis File
                     </a>
 
-                    <a href="/add-new-user" class="btn btn-default" id="#" style="width: 340px;
+                    <a href="/authentication-unitingcarehealth" class="btn btn-default" id="#"
+                        style="width: 340px;
                         border: 2px solid blue;
                         text-align: center;
                         cursor: pointer;
                         background-color: antiquewhite; margin: 0 15px; text-decoration: none;">
-                        Add New User
+                        Admin Section 🔒
                     </a>
                 </div>
 
@@ -461,9 +462,6 @@
             document.documentElement.setAttribute('data-theme', savedTheme);
             console.log(`Applied saved theme: ${savedTheme}`);
             typeWelcomeMessage();
-
-            const email = '<%= user.email %>'; // Replace with actual email from your backend template engine
-            fetchAssignments(email);
         }
 
 
